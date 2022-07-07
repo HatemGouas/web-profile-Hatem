@@ -1,0 +1,358 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    scroll-behavior: smooth;
+}
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Fredoka+One&family=Roboto:ital,wght@1,100&display=swap');
+
+#navbar{
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #d81b60;
+   height: 2cm;
+   width: 100%;
+   top: 0;
+   z-index: 10000;
+}
+.list{
+    list-style: none;
+    gap: 25px;
+    display: flex;
+    margin-top: 0;
+    height: 100%;
+    align-items: center;
+    
+}
+.menu .list li{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 0.5cm;
+    cursor: pointer;
+    transition: all 0.2s;
+    justify-content: center;
+}
+.menu .list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.65cm;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+.list li:hover > a{
+    color: #f50057;
+}
+.menu .list li:hover{
+    background-color: aliceblue;
+    color: #f50057;
+}
+.hatem{
+margin-left: 50px;
+height: 100%;
+display: flex;
+align-items: center;
+padding: 0 0.3cm;
+transition: all 0.5s;
+}
+.hatem a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.5cm;
+    font-family: sans-serif ;
+    font-weight: 700;
+}
+.hatem:hover{
+ background-color: rgba(0, 0, 0, 0.832);        
+}
+#toggler,
+#navbar label{
+    display: none;
+}
+#troggle{
+    visibility: hidden;
+ }
+
+#welcome-section{
+    width: 100%;
+    height:100vh;
+    background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+    margin-top: 2cm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+#welcome-section h1{
+    font-size: 1.5cm;
+    font-weight: 600; 
+    cursor: pointer;
+}
+#welcome-section h2{
+    color: #d81b60;
+    font-weight: 100;
+    font-size: 1cm;
+    font-style: italic;
+}
+
+#projects{
+    padding: 1.5cm 0.3cm;
+    background-color:#5472d3;
+}
+.project-tile{
+    font-size: 1cm;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    text-decoration: dashed;
+}
+.khat{
+    width: 60%;
+    text-align: center;
+    height: 4px;
+    background-color:white;
+    border: none;
+    margin-bottom: 1cm;
+}
+.hawi-projects{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.5cm;
+    
+}
+.hawi-projects a{
+    width:370px;
+    height: 370px; 
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+.hawi-projects a:hover{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transform: scale(1.01);
+filter: brightness(0.8);
+}
+.hawi-projects a .ph{
+    height: 300px;
+    border-radius: 10px 10px 0 0; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.photo1{
+    background-image: url("https://i.imgur.com/ACoLyF6.png");
+}
+.photo2{
+    background-image: url("https://i.imgur.com/RyfDfV9.png");
+}
+.photo3{
+    background-image: url("https://i.imgur.com/bOhfMyM.png");
+}
+.photo4{
+    background-image: url("https://i.imgur.com/tNuO5yo.png");
+}
+.photo5{
+    background-image: url("https://i.imgur.com/D2EEMnb.png");
+}
+.photo6{
+    background-image: url("https://i.imgur.com/qi6nWOi.png");
+}
+.hawi-projects a .name-project{
+    background-color: #263238;
+    height: 70px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7cm;
+    font-family: sans-serif;
+    border-radius: 0 0 10px 10px;
+}
+.hawi-projects a .name-project span{
+    color: #263238;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+.hawi-projects a:hover > .name-project > span{
+    color:#f50057;
+ 
+}
+.butt{
+    text-align: center;
+}
+.butt a button{
+padding: 0.3cm 0.6cm;
+font-size: 0.6cm;
+font-family: sans-serif;
+border: none;
+background-color: #263238;
+color: white;
+border-radius: 5px;
+transition: all 0.3s;
+cursor: pointer;
+}
+.butt a button span{
+    font-weight: 600;
+    transition: all 0.3s;
+}
+.butt a:hover button{ 
+background-color: #f50057;
+}
+.butt a:hover  button  span{
+   margin-left: 0.15cm;
+}
+.contact{
+    padding: 2cm 0;
+    background-color: #263238;
+    font-family: 'Poppins',sans-serif;
+}
+.tit1{
+    font-size: 1.8cm;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+}
+.tit2{
+    text-align: center;
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 0.53cm;
+    color: white;
+    font-weight: 400;
+    transform: scale(0.9, 1);
+   margin-top: 0.5cm;
+}
+.tit3{
+    margin-top: 1.5cm;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; 
+}
+.tit3 a{
+display: flex;
+gap: 5px;
+align-items: center;
+text-decoration: none;
+font-size: 0.6cm;
+color: white;
+flex-shrink: 0;
+transition: all 0.3s;
+}
+#welcome-section h1:hover ~ #mm{
+filter: opacity(1);
+}
+#mm{
+    font-family: 'Poppins',sans-serif;
+    filter: opacity(0);
+    color: azure;
+    font-size: 0.7cm;
+    transition: all 0.5s;
+}
+
+.tit3 a:hover{
+    transform: translateY(-10px);
+}
+.tit4{
+    text-align: center;
+    margin-top: 0.8cm;
+    color: white;
+    font-size: 0.6cm;
+}
+#thd{
+    width: 30px;
+}
+@media screen and (max-width:1170px) {
+    .hawi-projects{
+        flex-wrap: wrap;
+     }
+     .hawi-projects a{
+        margin-bottom: 1cm;
+     }
+}
+@media screen and (max-width:600px) {
+    #navbar{
+        padding: 0;
+        position: fixed;
+        width: 100%;
+    }
+.menu{
+    width: 100%;
+   transform: scaleY(1);
+    background-color: white;
+    transition: all 0.3s;
+    margin-left: 0;
+}
+    .list{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 20px;
+     
+    }
+   
+    .list{
+        display: none;
+    }
+    .list li{
+        width: 100%;
+    }
+    .list li a{
+        display: none;
+    }
+
+    #navbar label{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 1cm;
+        height: 1cm;
+        margin:0.3cm 0.3cm 0.3cm 0cm;
+    }
+   
+    #navbar > #troggle:checked ~ .menu .list{
+      display: flex;
+    } 
+    #navbar > #troggle:checked ~ .menu .list li a{
+        display: flex;
+        flex-direction: column;
+    }
+    #navbar > #troggle:checked ~ .menu{
+        display: flex;
+        transform: scaleY(1);
+        background-color: #d81b60;
+
+       }
+
+       #navbar > #troggle:checked ~ label > .g1{
+        transform: translateY(18px) rotateZ(45deg) scaleX(1.1);
+    }  
+    #navbar > #troggle:checked ~ label > .g3{
+        transform: translateY(-18px) rotateZ(-45deg) scaleX(1.1);
+        
+    }  
+#navbar > #troggle:checked ~ label > .g2{
+    opacity: 0;
+}  
+   .l1{
+    width: 1cm;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s;
+   }
+   #troggle{
+    visibility: hidden;
+ }
+}
